@@ -62,7 +62,7 @@ deploy:
             command: heroku run bundle exec rake db:migrate
             RAILS_ENV=production -a $HEROKU_APP_NAME
 
-            
+
 
         
 
@@ -79,5 +79,5 @@ workflows:
             - test
         filters:
             branches:
-                only:main
+                only: main
 
